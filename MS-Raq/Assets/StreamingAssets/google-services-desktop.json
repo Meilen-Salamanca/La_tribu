@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "643329886468",
+    "project_id": "pg-seriousgame",
+    "storage_bucket": "pg-seriousgame.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:643329886468:android:ca242c388407ff3a16e851",
+        "android_client_info": {
+          "package_name": "com.databse.unit"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "643329886468-tlm5iqcm7maeubk918hvvdvfj54gis5t.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBlQJEQifiLJogQS7Bope1UbYgtnOoqOWk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "643329886468-tlm5iqcm7maeubk918hvvdvfj54gis5t.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
