@@ -9,6 +9,7 @@ public class LogicaPersonaje : MonoBehaviour
     private Animator anim;
     public CharacterController playerController;
     public float x, y;
+    public bool rotationMovement;
 
     // Start is called before the first frame update
     void Start()
@@ -26,17 +27,30 @@ public class LogicaPersonaje : MonoBehaviour
         x = Input.GetAxis("Horizontal");
         y = Input.GetAxis("Vertical");
 
-        transform.Rotate(0, x * Time.deltaTime * velocidadRotacion, 0);
-        if (y != 0)
+        if (rotationMovement)
         {
-            Vector3 forwardMove = transform.TransformDirection(Vector3.forward);
-            forwardMove.y = -9.8f;
-            forwardMove.z *= y;
-            playerController.Move(forwardMove * Time.deltaTime * velocidadMovimiento);
+            transform.Rotate(0, x * Time.deltaTime * velocidadRotacion, 0);
+            if (y != 0)
+            {
+                Vector3 forwardMove = transform.TransformDirection(Vector3.forward);
+                forwardMove.y = -9.8f;
+                forwardMove.z *= y;
+                playerController.Move(forwardMove * Time.deltaTime * velocidadMovimiento);
+            }
+            else
+            {
+                Vector3 forwardMove = Vector3.zero;
+                forwardMove.y = -9.8f;
+                playerController.Move(forwardMove * Time.deltaTime * velocidadMovimiento);
+            }
         }
-        //anim.SetFloat("VelX", x);
-        //anim.SetFloat("VelY", y);
-
-
+        else
+        {
+            Vector3 forwardMove2 = Vector3.zero;
+            forwardMove2.y = -9.8f;
+            forwardMove2.z = y;
+            forwardMove2.x = x;
+            playerController.Move(forwardMove2 * Time.deltaTime * velocidadMovimiento);
+        }
     }
 }
