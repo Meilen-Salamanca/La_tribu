@@ -13,7 +13,7 @@ public class Pausar : MonoBehaviour
     }
     void Update()
     {
-        if (Input.GetKeyDown("F"))
+        if (Input.GetKeyDown(KeyCode.F))
         {
             active = !active;
             canvas.enabled = active;

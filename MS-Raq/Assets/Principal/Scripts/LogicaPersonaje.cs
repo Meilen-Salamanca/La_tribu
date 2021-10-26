@@ -49,7 +49,7 @@ public class LogicaPersonaje : MonoBehaviour
             Vector3 forwardMove2 = Vector3.zero;
             forwardMove2.y = -9.8f;
             forwardMove2.z = y;
-            forwardMove2.x = x;
+            forwardMove2.x = x*0.5f;
             playerController.Move(forwardMove2 * Time.deltaTime * velocidadMovimiento);
         }
     }
