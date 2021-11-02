@@ -18892,7 +18892,7 @@ RectTransform:
   m_LocalScale: {x: 0.036894735, y: 1.0673645, z: 0.7161327}
   m_Children: []
   m_Father: {fileID: 1721326865}
-  m_RootOrder: 11
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -19305,7 +19305,7 @@ MonoBehaviour:
   doc: {fileID: 1825400534}
   niv: {fileID: 1988085681}
   tiempoReloj: {fileID: 365247071}
-  frecuenciaCardiaca: {fileID: 476567581}
+  frecuenciaCardiaca: {fileID: 1550694544}
   BASE_URL: https://docs.google.com/forms/u/0/d/e/1FAIpQLSdz83egBqn5oC0a0rQQjeiWr-1R9zotyhNYGC4Bwsc2FlP8OA/formResponse
 --- !u!114 &377181477
 MonoBehaviour:
@@ -23243,8 +23243,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 26.903, y: 0.00013542}
-  m_SizeDelta: {x: 646.10034, y: 270.25635}
+  m_AnchoredPosition: {x: 25.469, y: 0.00013542}
+  m_SizeDelta: {x: 443.9939, y: 270.25635}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &476567581
 MonoBehaviour:
@@ -23278,7 +23278,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'F.Card: 0'
+  m_Text: 'F.Card:'
 --- !u!222 &476567582
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -44631,7 +44631,7 @@ RectTransform:
   m_LocalScale: {x: 0.014191842, y: 0.37001786, z: 0.14702608}
   m_Children: []
   m_Father: {fileID: 1721326865}
-  m_RootOrder: 10
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -72047,6 +72047,84 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1548843026}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1550694542
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1550694543}
+  - component: {fileID: 1550694545}
+  - component: {fileID: 1550694544}
+  m_Layer: 5
+  m_Name: Frec Card value
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1550694543
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1550694542}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0.00038729553}
+  m_LocalScale: {x: 0.014191844, y: 0.37001786, z: 0.14702608}
+  m_Children: []
+  m_Father: {fileID: 1721326865}
+  m_RootOrder: 10
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 30.118, y: 0.00013542}
+  m_SizeDelta: {x: 203.99689, y: 270.25635}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1550694544
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1550694542}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: 89172e77a015e564f8cab9d144ae0182, type: 3}
+    m_FontSize: 300
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 0
+    m_MaxSize: 300
+    m_Alignment: 4
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: 000
+--- !u!222 &1550694545
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1550694542}
+  m_CullTransparentMesh: 0
 --- !u!1 &1552597779
 GameObject:
   m_ObjectHideFlags: 0
@@ -80033,6 +80111,7 @@ RectTransform:
   - {fileID: 918476256}
   - {fileID: 814799018}
   - {fileID: 476567580}
+  - {fileID: 1550694543}
   - {fileID: 950173190}
   - {fileID: 365247070}
   m_Father: {fileID: 2102411354}
