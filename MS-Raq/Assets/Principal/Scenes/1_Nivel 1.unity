@@ -18913,6 +18913,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tiempoInicial: 0
   escalaDeTiempo: 1
+  stopTime: 0
 --- !u!114 &365247072
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19303,6 +19304,8 @@ MonoBehaviour:
   tiempo: {fileID: 556326538}
   doc: {fileID: 1825400534}
   niv: {fileID: 1988085681}
+  tiempoReloj: {fileID: 365247071}
+  frecuenciaCardiaca: {fileID: 476567581}
   BASE_URL: https://docs.google.com/forms/u/0/d/e/1FAIpQLSdz83egBqn5oC0a0rQQjeiWr-1R9zotyhNYGC4Bwsc2FlP8OA/formResponse
 --- !u!114 &377181477
 MonoBehaviour:
@@ -26340,7 +26343,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &556326539
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -60707,6 +60710,9 @@ MonoBehaviour:
   playerController: {fileID: 1311613009}
   x: 5
   y: 0
+  rotationMovement: 1
+  enableMovement: 1
+  databaseManagement: {fileID: 0}
 --- !u!95 &1311613005
 Animator:
   serializedVersion: 3
@@ -68885,7 +68891,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1487115876
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -82550,6 +82556,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   EndScrn: {fileID: 1594072273}
+  time: {fileID: 365247071}
 --- !u!65 &1772577960
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -94593,7 +94600,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 377181476}
-        m_MethodName: Send
+        m_MethodName: SendSecond
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

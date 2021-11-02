@@ -11,6 +11,7 @@ public class Reloj : MonoBehaviour
     public float escalaDeTiempo = 1;
 
     private Text myText;
+    public bool stopTime;
     private float TiempoFrameConTiempoScale = 0f;
     private float tiempoMostrarEnSegundos = 0F;
     private float escalaDeTiempoPausar, escalaDeTiempoInicial;
@@ -30,10 +31,12 @@ public class Reloj : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
-        TiempoFrameConTiempoScale = Time.deltaTime * escalaDeTiempo;
-        tiempoMostrarEnSegundos += TiempoFrameConTiempoScale;
-        ActualizarReloj(tiempoMostrarEnSegundos);
+        if (!stopTime)
+        {
+            TiempoFrameConTiempoScale = Time.deltaTime * escalaDeTiempo;
+            tiempoMostrarEnSegundos += TiempoFrameConTiempoScale;
+            ActualizarReloj(tiempoMostrarEnSegundos);
+        }
     }
     public void ActualizarReloj(float tiempoEnSegundos)
     {
@@ -50,6 +53,11 @@ public class Reloj : MonoBehaviour
 
         textoDelReloj = minutos.ToString("00") + ":" + segundos.ToString("00"); //+ ":" + milisegundos.ToString("00");
         myText.text = textoDelReloj;
+    }
+
+    public string GetFormatedTime()
+    {
+        return ((int)tiempoMostrarEnSegundos / 60) + ":" + ((int)tiempoMostrarEnSegundos % 60);
     }
 
 }

@@ -13,6 +13,9 @@ public class SendToGoogle : MonoBehaviour
     public GameObject doc;
     public GameObject niv;
 
+    public Reloj tiempoReloj;
+    public Text frecuenciaCardiaca;
+
     private string Name;
     private string Frec;
     private string Tiempo;
@@ -52,5 +55,25 @@ public class SendToGoogle : MonoBehaviour
         Doc = doc.GetComponent<InputField>().text;
         Niv = niv.GetComponent<InputField>().text;
         StartCoroutine(Post(Name, Frec, Tiempo, Doc, Niv));
+    }
+    public void SendSecond()
+    {
+        Name = username.GetComponent<InputField>().text;
+        Doc = doc.GetComponent<InputField>().text;
+        Niv = niv.GetComponent<InputField>().text;
+        StartCoroutine(Post(Name, frecuenciaCardiaca.text, tiempoReloj.GetFormatedTime(), Doc, Niv));
+    }
+
+    public void Send(string name, string frequency, string time, string specialist, string level)
+    {
+        StartCoroutine(Post(name, frequency, time, specialist, level));
+    }
+
+    public void Send(string frequency, string time)
+    {
+        Name = username.GetComponent<InputField>().text;
+        Doc = doc.GetComponent<InputField>().text;
+        Niv = niv.GetComponent<InputField>().text;
+        StartCoroutine(Post(Name, frequency, time, Doc, Niv));
     }
 }
